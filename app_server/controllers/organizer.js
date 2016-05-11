@@ -1,3 +1,4 @@
+
 module.exports.signUp = function(req, res) {
     res.render('index', {
         title: 'Signup'

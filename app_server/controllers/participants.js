@@ -1,6 +1,8 @@
+var navLinks = require('../config/navigation')();
 module.exports.participantsList = function(req, res) {
-    res.render('index', {
-        title: 'Participants'
+    res.render('participants', {
+        title: 'Participants',
+        nav: navLinks.getNavList()
     });
 };
 

@@ -9,7 +9,7 @@ var ctrlVoters = require('../controllers/voters');
 var ctrlOrganizer = require('../controllers/organizer');
 
 /* Competition pages */
-router.get('/Competitions', ctrlCompetitions.homelist);
+router.get('/', ctrlCompetitions.homelist);
 router.get('/Competitions/viewAll', ctrlCompetitions.viewAll);
 router.get('/Competitions/add', ctrlCompetitions.addCompetition);
 

@@ -1,4 +1,4 @@
-var navLinks= function() {
+var navLinks = function() {
     var nav = [{
         Link: '/Participants',
         Text: 'Participant'
