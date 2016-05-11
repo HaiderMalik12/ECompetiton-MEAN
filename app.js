@@ -5,8 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+var routes = require('./app_server/routes/index');
+var users = require('./app_server/routes/users');
 
 var app = express();
 
@@ -54,6 +54,9 @@ app.use(function(err, req, res, next) {
         error: {}
     });
 });
+var PORT = process.env.PORT || 3000;
 
-
+app.listen(PORT,function(){
+    console.log('Sever is Listening on PORT '+PORT);
+});
 module.exports = app;
