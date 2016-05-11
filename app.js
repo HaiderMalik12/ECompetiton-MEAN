@@ -11,7 +11,7 @@ var users = require('./app_server/routes/users');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname,'app_server', 'views'));
 app.set('view engine', 'ejs');
 
 app.use(favicon());
@@ -56,7 +56,7 @@ app.use(function(err, req, res, next) {
 });
 var PORT = process.env.PORT || 3000;
 
-app.listen(PORT,function(){
-    console.log('Sever is Listening on PORT '+PORT);
+app.listen(PORT, function() {
+    console.log('Sever is Listening on PORT ' + PORT);
 });
 module.exports = app;
